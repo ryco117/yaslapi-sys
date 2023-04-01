@@ -2,6 +2,7 @@
 name = "yaslapi-sys"
 version = "0.1.0"
 edition = "2021"
+authors = ["Ryan Andersen", "Thiabaud Engelbrecht"]
 description = "A library that provides bindings to the Yet Another Scripting Language (YASL) API."
 license = "MIT"
 license-file = "LICENSE"
