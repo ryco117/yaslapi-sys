@@ -22,8 +22,9 @@ use std::ffi::CString;
 
 fn main() {
     let test_file = CString::new("test.yasl").unwrap();
-    let state = YASL_newstate(test_file.as_ptr());
+    let state: *mut YASL_State = unsafe { yaslapi_sys::YASL_newstate(test_file.as_ptr()) };
     assert!(!state.is_null());
+    // ...
 }
 ```
 
