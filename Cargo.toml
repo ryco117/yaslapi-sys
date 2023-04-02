@@ -1,8 +1,8 @@
 [package]
 name = "yaslapi-sys"
-version = "0.1.1"
+version = "0.2.0"
 edition = "2021"
-authors = ["Ryan Andersen", "Thiabaud Engelbrecht"]
+authors = ["Ryan Andersen <ryco117@gmail.com>", "Thiabaud Engelbrecht"]
 description = "A library that provides bindings to the Yet Another Scripting Language (YASL) API."
 license = "MIT"
 
@@ -10,6 +10,7 @@ license = "MIT"
 
 [build-dependencies]
 bindgen = "0.64.0"
+cmake = "0.1.50"
 
 [dependencies]
 num = "0.4.0"

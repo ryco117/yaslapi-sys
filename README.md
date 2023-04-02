@@ -2,12 +2,12 @@
 yaslapi-sys is a Rust library that provides bindings to the [Yet Another Scripting Language (YASL)](https://github.com/yasl-lang/yasl) API.
 
 ## Installation
-First, you must have YASL [installed on your system](https://github.com/yasl-lang/yasl/blob/master/README.md#Installation) to use this crate.
+First, you must have CMake and a C compiler installed so that YASL can be compiled locally.
 To install yaslapi-sys, add the following to your `Cargo.toml` file:
 
 ```toml
 [dependencies]
-yaslapi-sys = "0.1.0"
+yaslapi-sys = "0.2.0"
 ```
 
 Then run cargo build to build your project.

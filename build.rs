@@ -4,9 +4,14 @@ use std::env;
 use std::path::PathBuf;
 
 fn main() {
-    // Tell cargo to tell rustc to link the system bzip2
-    // shared library.
-    println!("cargo:rustc-link-lib=yaslapi");
+    let dst = cmake::Config::new("yasl").build_target("yaslapi").build();
+    println!(
+        "cargo:rustc-link-search=native={}",
+        dst.join("build").display()
+    );
+
+    // Tell cargo to tell rustc to link compiled yaslapi library
+    println!("cargo:rustc-link-lib=static=yaslapi");
 
     // Tell cargo to invalidate the built crate whenever the wrapper changes
     println!("cargo:rerun-if-changed=wrapper.h");
