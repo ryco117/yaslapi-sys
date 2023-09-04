@@ -1,6 +1,6 @@
 [package]
 name = "yaslapi-sys"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 authors = ["Ryan Andersen <ryco117@gmail.com>", "Thiabaud Engelbrecht"]
 description = "A library that provides bindings to the Yet Another Scripting Language (YASL) API."
@@ -9,13 +9,13 @@ license = "MIT"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [build-dependencies]
-bindgen = "0.64.0"
+bindgen = "0.66.1"
 cmake = "0.1.50"
 
 [dependencies]
-num = "0.4.0"
-num-derive = "0.3.3"
-num-traits = "0.2.15"
+num = "0.4.1"
+num-derive = "0.4.0"
+num-traits = "0.2.16"
 
 [profile.release]
 lto = true

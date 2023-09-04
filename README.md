@@ -7,7 +7,7 @@ To install yaslapi-sys, add the following to your `Cargo.toml` file:
 
 ```toml
 [dependencies]
-yaslapi-sys = "0.2.0"
+yaslapi-sys = "0.2.1"
 ```
 
 Then run cargo build to build your project.
