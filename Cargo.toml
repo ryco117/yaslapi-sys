@@ -1,6 +1,6 @@
 [package]
 name = "yaslapi-sys"
-version = "0.2.1"
+version = "0.2.2"
 edition = "2021"
 authors = ["Ryan Andersen <ryco117@gmail.com>", "Thiabaud Engelbrecht"]
 description = "A library that provides bindings to the Yet Another Scripting Language (YASL) API."
