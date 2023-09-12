@@ -7,7 +7,7 @@ To install yaslapi-sys, add the following to your `Cargo.toml` file:
 
 ```toml
 [dependencies]
-yaslapi-sys = "0.2.3"
+yaslapi-sys = "0.2.4"
 ```
 
 Then run cargo build to build your project.
@@ -16,8 +16,6 @@ Then run cargo build to build your project.
 Here’s an example of how to use yaslapi-sys in your Rust code:
 
 ```rust
-extern crate yaslapi_sys;
-
 use yaslapi_sys::YASL_State;
 use std::ffi::CString;
 
