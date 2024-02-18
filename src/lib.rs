@@ -1,5 +1,5 @@
 //! # yaslapi-sys
-//! yaslapi-sys is a Rust library that provides bindings to the [Yet Another Scripting Language (YASL)](https://github.com/yasl-lang/yasl) API.
+//! yaslapi-sys is a Rust library that provides raw bindings to the [Yet Another Scripting Language (YASL)](https://github.com/yasl-lang/yasl) API.
 //!
 //! Then run cargo build to build your project.
 //!
@@ -39,6 +39,8 @@ mod tests {
     #[no_mangle]
     unsafe extern "C" fn rust_print_internal(_state: *mut YASL_State) -> i32 {
         println!("This is a test");
+
+	// Return the number of return values pushed to the YASL stack.
         0
     }
 

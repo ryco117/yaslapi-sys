@@ -1,5 +1,5 @@
 # yaslapi-sys
-yaslapi-sys is a Rust library that provides bindings to the [Yet Another Scripting Language (YASL)](https://github.com/yasl-lang/yasl) API.
+yaslapi-sys is a Rust library that provides raw bindings to the [Yet Another Scripting Language (YASL)](https://github.com/yasl-lang/yasl) API.
 
 ## Installation
 First, you must have CMake and a C compiler installed so that YASL can be compiled locally.
