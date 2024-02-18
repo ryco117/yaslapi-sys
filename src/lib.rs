@@ -10,12 +10,9 @@
 //! use yaslapi_sys::YASL_State;
 //! use std::ffi::CString;
 //!
-//! fn main() {
-//!     const SRC: &str = "let x = 5; echo x**x;";
-//!     let state: *mut YASL_State = unsafe { yaslapi_sys::YASL_newstate_bb(SRC.as_ptr().cast(), SRC.len()) };
-//!     assert!(!state.is_null());
-//!     // ...
-//! }
+//! const SRC: &str = "let x = 5; echo x**x;";
+//! let state: *mut YASL_State = unsafe { yaslapi_sys::YASL_newstate_bb(SRC.as_ptr().cast(), SRC.len()) };
+//! assert!(!state.is_null());
 //! ```
 
 #![allow(
@@ -40,7 +37,7 @@ mod tests {
     unsafe extern "C" fn rust_print_internal(_state: *mut YASL_State) -> i32 {
         println!("This is a test");
 
-	// Return the number of return values pushed to the YASL stack.
+        // Return the number of return values pushed to the YASL stack.
         0
     }
 
